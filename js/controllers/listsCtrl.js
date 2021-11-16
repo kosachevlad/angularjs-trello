@@ -7,4 +7,6 @@ angular.module('app').controller('listsCtrl', function (listFactory) {
     listFactory.addList(this.listName)
     this.listName = ''
   }
+
+
 });

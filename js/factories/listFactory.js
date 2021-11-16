@@ -1,6 +1,5 @@
 angular.module('app').factory('listFactory', function () {
   var service = {};
-
   var lists = [
     {
       id: 1,
