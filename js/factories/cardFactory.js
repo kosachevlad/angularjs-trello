@@ -31,5 +31,15 @@ angular.module('app').factory('cardFactory', function() {
       list_id: list.id
     })
   }
+
+  service.deleteCard = function (card) {
+    return _.pull(cards, card)
+  }
+
+  service.updateCard = function(updatedCard) {
+    const card = cards.find(card => card.id === updatedCard.id)
+    card.description = updatedCard.description
+  }
+
   return service
 })
